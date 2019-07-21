@@ -12,6 +12,15 @@ info
 
 # $* is a single string whereas $@ -> is an actual array 
 
+: '
+
+$* - Expands to the positional parameters, starting from one. When the expansion occurs within double quotes, 
+it expands to a single word with the value of each parameter separated by the first character of the IFS special variable.
+
+$@ - Expands to the positional parameters, starting from one. When the expansion occurs within double quotes, each parameter expands to a separate word.
+
+'
+
 echo "Using \"\$@\" :"
 
 #Use this 
